@@ -1,0 +1,126 @@
+<!doctype html>
+	<html>
+	<head>
+	<title> Formulário </title>
+
+<script type="text/javascript">
+function validar()
+{ 
+var n=document.formulario123.senha.value; 
+var o=document.formulario123.confirmarsenha.value; 
+
+if(n!=o)
+
+{ alert('a senha está diferente');
+document.formulario123.senha.focus();} }
+
+</script>
+</head>
+<body>
+
+<form name="formulario123" action="fim.html"
+method="post">
+
+<p>
+
+<label for="Nome">
+Nome:
+</label>
+
+</p>
+<p>
+
+<input text ="text"
+name+"nome_usuario" id="nome">
+
+</p>
+
+<p>
+
+<label for="Sobrenome">
+Sobrenome:
+</label>
+
+</p>
+<p>
+
+<input text ="text"name+"sobrenome_usuario" id="sobrenome">
+
+</p>
+
+<p>
+
+<label for="eml">
+E-mail:
+</label>
+
+</p>
+<p>
+
+<input text ="email"name+"email_usuario" id="e-mail">
+
+</p>
+
+<p>
+
+<label>
+
+Telefone:
+
+<p>
+</p>
+
+<input type="tel"placeholder="(xx) xxxxx-xxxx" id="telefone"
+pattern="^\(?\d{2}\)\d{4}.*?$">
+
+<p>
+
+	<label for="dtn">
+	Data De Nascimento:
+	</label>
+	
+	</p>
+	<p>
+	
+	<input text ="text"name+"dtn_usuario" id="dtn">
+	
+	</p>
+
+
+<p>
+
+	<label for="cpf">
+	CPF:
+	</label>
+	
+	</p>
+	<p>
+	
+	<input text ="text"name+"cpf_usuario" id="cpf">
+	
+	</p>
+	<p>
+
+		<label for="endereco">
+	endereço:
+		</label>
+		
+		</p>
+		<p>
+		
+		<input text ="text"name+"endereco_usuario" id="endereco">
+		
+		</p>
+	
+
+
+
+
+</label>
+
+<button type="submit" onclick="alert('Formulario Enviado')">Enviar</button>
+
+	
+</form>
+</body>
+</html>
